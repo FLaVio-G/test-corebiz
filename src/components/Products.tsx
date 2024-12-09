@@ -33,7 +33,7 @@ const Products = () => {
             }}
           >
             {[...Array(4)].map((_, index) => (
-              <div key={index} className="keen-slider__slide flex flex-col">
+              <div key={index} className="keen-slider__slide flex items-center justify-center flex-col">
                 <div>
                   <img
                     className="h-[200px] w-[216px]"
