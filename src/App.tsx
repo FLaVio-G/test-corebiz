@@ -1,8 +1,9 @@
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import KeepBanner from "./components/KeepBanner";
 import Newsletter from "./components/Newsletter";
 import Products from "./components/Products";
+import "./index.css";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <KeepBanner />
         <Products />
         <Newsletter />
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

@@ -5,7 +5,11 @@ export default {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ['"Nunito"', "sans-serif"],
+      },
+    },
   },
   plugins: [
     require('daisyui'),

@@ -1,52 +1,52 @@
 const footer = () => {
   return (
-    <div className="w-full flex flex-col items-center   h-[246.68px] bg-black">
-      <div className="flex items-center pt-[32px] justify-center">
-        <button className="btn w-[195px] mr-[16px] h-[38px]">
-          <div className="flex ">
+    <div className="flex h-[246.68px] w-full flex-col items-center bg-black">
+      <div className="flex items-center justify-center pt-[32px]">
+        <button className="btn mr-[16px] h-[38px] w-[195px] bg-white">
+          <div className="flex">
             <img
-              className="h-[16.88px] mr-[18.08px] w-[13.51px]"
+              className="mr-[18.08px] h-[16.88px] w-[13.51px]"
               src="/public/email.svg"
               alt=""
             />
-            <p className="text-[12px]">ENTRE EM CONTATO</p>
+            <p className="text-[12px] text-black">ENTRE EM CONTATO</p>
           </div>
         </button>
-        <button className="btn w-[195px] h-[38px]">
-          <div className="flex">
+        <button className="btn h-[38px] w-[195px] bg-white">
+          <div className="flex items-center justify-center">
             <img
-              className="h-[16.88px]   w-[13.51px]"
+              className="h-[16.88px] w-[13.51px]"
               src="/public/headseat.svg"
               alt=""
             />
-            <p className="text-[12px]">FALE COM O NOSSO
-              CONSULTOR ONLINE</p>
+            <p className="text-[12px] text-black">
+              FALE COM O NOSSO CONSULTOR ONLINE
+            </p>
           </div>
         </button>
       </div>
-      <div className="flex items-end w-[1248px] mt-[32px] justify-between bg-red-500">
+      <div className="mt-[32px] flex w-[1248px] items-end justify-between">
         <div>
-          <h3>
-            Localização
-          </h3>
-          <p>Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphavile SP</p>
-          <p>brasil@corebiz.ag</p>
-          <p>+55 11 3090 1039</p>
+          <h3 className="text-[20px] text-white">Localização</h3>
+          <div className="mt-[16px]">
+            <p className="text-white">
+              Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphavile SP
+            </p>
+            <p className="text-white">brasil@corebiz.ag</p>
+            <p className="text-white">+55 11 3090 1039</p>
+          </div>
         </div>
 
         <div>
-          <h4>
-            Create by
-          </h4>
           <img
-            className="h-[18px] text-white w-[136px]"
+            className="h-[18px] w-[136px] text-white"
             src="\public\logoFooter.svg"
             alt=""
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default footer
+export default footer;
