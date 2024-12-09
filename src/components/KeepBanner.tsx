@@ -20,14 +20,14 @@ export default function keepBanner() {
     <>
       <div className="navigation-wrapper relative">
         <div ref={sliderRef} className="keen-slider">
-          <div className="keen-slider__slide number-slide1">
+          <div className="keen-slider__slide">
             <img
               src="public\banner2.jpg"
               alt="Example Icon"
               className="h-auto"
             />
           </div>
-          <div className="keen-slider__slide number-slide2">
+          <div className="keen-slider__slide">
             {" "}
             <img
               src="public\banner3.jpg"
@@ -35,11 +35,25 @@ export default function keepBanner() {
               className="h-auto"
             />
           </div>
-          <div className="keen-slider__slide number-slide3">3</div>
-          <div className="keen-slider__slide number-slide4">4</div>
+          <div className="keen-slider__slide">
+            {" "}
+            <img
+              src="public\banner3.jpg"
+              alt="Example Icon"
+              className="h-auto"
+            />
+          </div>
+          <div className="keen-slider__slide">
+            {" "}
+            <img
+              src="public\banner3.jpg"
+              alt="Example Icon"
+              className="h-auto"
+            />
+          </div>
         </div>
         {loaded && instanceRef.current && (
-          <div className="absolute bottom-[37px] left-1/2 z-10 flex -translate-x-1/2 transform gap-2">
+          <div className="absolute bottom-[5px] left-1/2 z-10 flex -translate-x-1/2 transform gap-2 lg:bottom-[37px]">
             {[
               ...Array(instanceRef.current.track.details.slides.length).keys(),
             ].map((idx) => {

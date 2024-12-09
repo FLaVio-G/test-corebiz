@@ -1,47 +1,47 @@
-const footer = () => {
+const Footer = () => {
   return (
-    <div className="flex h-[246.68px] w-full flex-col items-center bg-black">
-      <div className="flex items-center justify-center pt-[32px]">
-        <button className="btn mr-[16px] h-[38px] w-[195px] bg-white">
+    <div className="flex flex-wrap-reverse items-center justify-center bg-black px-[2rem] py-[2rem] md:px-[3rem] lg:flex-col lg:justify-normal">
+      <div className="mt-2 flex flex-col items-center justify-center gap-4 lg:mt-0 lg:flex-row lg:gap-0 lg:pt-[2rem]">
+        <button className="btn glass h-[2.375rem] w-[12.1875rem] bg-white lg:mr-[1rem]">
           <div className="flex">
             <img
-              className="mr-[18.08px] h-[16.88px] w-[13.51px]"
+              className="mr-[1.13125rem] h-[1.055rem] w-[0.843rem]"
               src="/public/email.svg"
-              alt=""
+              alt="Email"
             />
-            <p className="text-[12px] text-black">ENTRE EM CONTATO</p>
+            <p className="text-[0.75rem] text-black">ENTRE EM CONTATO</p>
           </div>
         </button>
-        <button className="btn h-[38px] w-[195px] bg-white">
+        <button className="btn glass h-[2.375rem] w-[12.1875rem] bg-white">
           <div className="flex items-center justify-center">
             <img
-              className="h-[16.88px] w-[13.51px]"
+              className="h-[1.055rem] w-[0.843rem]"
               src="/public/headseat.svg"
-              alt=""
+              alt="Consultor Online"
             />
-            <p className="text-[12px] text-black">
+            <p className="text-[0.75rem] text-black">
               FALE COM O NOSSO CONSULTOR ONLINE
             </p>
           </div>
         </button>
       </div>
-      <div className="mt-[32px] flex w-[1248px] items-end justify-between">
-        <div>
-          <h3 className="text-[20px] text-white">Localização</h3>
-          <div className="mt-[16px]">
-            <p className="text-white">
-              Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphavile SP
-            </p>
+
+      <div className="mt-[2rem] flex w-full flex-col md:w-[78.125rem] md:flex-row lg:items-center lg:justify-between">
+        <div className="items-start text-center md:text-left">
+          <h3 className="text-[1.25rem] text-white">Localização</h3>
+          <div className="mt-[1rem] flex flex-col items-start lg:flex-none">
+            <p className="text-white">Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+            <p className="text-white">Alphaville SP</p>
             <p className="text-white">brasil@corebiz.ag</p>
             <p className="text-white">+55 11 3090 1039</p>
           </div>
         </div>
 
-        <div>
+        <div className="mt-[1rem] hidden md:mt-0 lg:block">
           <img
-            className="h-[18px] w-[136px] text-white"
-            src="\public\logoFooter.svg"
-            alt=""
+            className="h-[1.125rem] w-[8.5rem] text-white"
+            src="/public/logoFooter.svg"
+            alt="Logo Footer"
           />
         </div>
       </div>
@@ -49,4 +49,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
