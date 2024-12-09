@@ -1,4 +1,4 @@
-import Footer from "./components/Footer";
+
 import Header from "./components/Header";
 import KeepBanner from "./components/KeepBanner";
 import Newsletter from "./components/Newsletter";
@@ -15,7 +15,7 @@ function App() {
           <KeepBanner />
           <Products />
           <Newsletter />
-          <Footer />
+     
         </CartProvider>
       </div>
     </>
